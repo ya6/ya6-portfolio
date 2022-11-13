@@ -33,11 +33,11 @@ const Freelancer = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="inner text-start">
-                                    <h1 className="title">Hi there, I am‍ <br /><span className="theme-gradient">Liam Noah!</span></h1>
-                                    <p className="description">I am an outstanding Product Designer from Lagos, Fatima. You will find me smiling almost every time while designing thoughtful products, and experiences that people love and businesses value.</p>
+                                    <h1 className="title">Hi there, I am‍ <br /><span className="theme-gradient">Aleksander</span></h1>
+                                    <p className="description">I am an engineer and developer striving to create products that people like and businesses value.</p>
                                     <div className="button-group mt--40 mt_sm--20">
-                                        <Link className="btn-default btn-border" to="#">Click For Hire Me</Link>
-                                        <Link className="btn-default btn-icon" to="#">About Me <i className="icon"><FiArrowRight /></i></Link>
+                                        {/* <Link className="btn-default btn-border" to="#">Click For Hire Me</Link>
+                                        <Link className="btn-default btn-icon" to="#">About Me <i className="icon"><FiArrowRight /></i></Link> */}
                                     </div>
                                 </div>
                             </div>

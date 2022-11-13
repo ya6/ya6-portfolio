@@ -6,6 +6,9 @@ import { route } from "./config/config";
 import { AppStateProvider } from "./state/app-state";
 import appStateReducer from "./state/appStateReducer";
 import initialAppState from "./state/initialAppState";
+// Import Css Here 
+import './assets/scss/style.scss';
+
 
 const App = () => {
   const navigate = useNavigate();

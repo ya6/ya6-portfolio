@@ -5,8 +5,11 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const webpack = require('webpack');
+
 
 const isProduction = process.env.NODE_ENV === "production";
+
 
 const stylesHandler = isProduction
   ? MiniCssExtractPlugin.loader
@@ -32,6 +35,9 @@ const config = {
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+     new webpack.ProvidePlugin({
+      process: 'process/browser',
+    }),
   ],
   module: {
     rules: [
@@ -83,7 +89,7 @@ const config = {
   },
 };
 
-module.exports = () => {
+module.exports = (env) => {
   if (isProduction) {
     config.mode = "production";
     // config.devtool = "source-map";
@@ -93,6 +99,6 @@ module.exports = () => {
     config.devtool = "eval-cheap-module-source-map";
     config.output.publicPath = "/";
     config.plugins.push(new ReactRefreshWebpackPlugin());
-  }
+      }
   return config;
 };

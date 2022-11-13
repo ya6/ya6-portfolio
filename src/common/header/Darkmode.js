@@ -1,4 +1,6 @@
 import React from 'react';
+import sun from "../../assets/images/icons/sun-01.svg"
+import vector from "../../assets/images/icons/vector.svg"
 
 const Darkmode = () => {
     const switchTheme = (e) => {
@@ -6,8 +8,8 @@ const Darkmode = () => {
     }
     return (
         <button id="darkmode" onClick={(e) => switchTheme(e)}>
-           <img className="light-icon" src={`${process.env.PUBLIC_URL}/images/icons/sun-01.svg`} alt="Sun images" />
-           <img className="dark-icon" src={`${process.env.PUBLIC_URL}/images/icons/vector.svg`} alt="Sun images" />
+           <img className="light-icon" src={sun} alt="Sun images" />
+           <img className="dark-icon" src={vector} alt="Sun images" />
         </button>
     )
 }

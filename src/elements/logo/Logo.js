@@ -5,9 +5,9 @@ import {Link} from "react-router-dom";
 const Logo = ({image, image2}) => {
     return(
         <div className="logo">
-            <Link to={"/"}>
-                <img className="logo-light" src={process.env.PUBLIC_URL + image} alt="Corporate Logo" />
-                {/* <img className="logo-dark" src={process.env.PUBLIC_URL + image2} alt="Corporate Logo" /> */}
+            <Link to={"/home"}>
+                <img className="logo-light" src={image} alt="Logo" />
+                <img className="logo-dark" src={image2} alt="Logo" />
             </Link>
         </div>
     )

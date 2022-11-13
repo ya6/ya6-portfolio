@@ -11,6 +11,9 @@ import './assets/scss/style.scss';
 
 
 const App = () => {
+  console.log(process.env.REACT_APP_PUBLIC_URL);
+  console.log(process.env.PUBLIC_URL);
+  console.log(window.location.pathname);
   const navigate = useNavigate();
 
   useEffect(() => {

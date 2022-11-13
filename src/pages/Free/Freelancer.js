@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import SEO from "../../common/SEO";
 import { FiArrowRight } from "react-icons/fi";
+import HeaderYA from '../../common/header/HeaderYA';
 import HeaderTwo from '../../common/header/HeaderTwo';
 import HeaderTopNews from '../../common/header/HeaderTopNews';
 import CopyrightTwo from '../../common/footer/CopyrightTwo';
@@ -23,11 +24,11 @@ const Freelancer = () => {
         <>
             <SEO title="Freelancer" />
             <main className="page-wrapper">
-                <HeaderTopNews />
-                <HeaderTwo btnStyle="btn-small" HeaderSTyle="header-transparent" />
+           
+                <HeaderYA btnStyle="btn-small" HeaderSTyle="header-transparent" />
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/bg-png-01.png)`}}>
+                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `/images/bg/bg-png-01.png)`}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">

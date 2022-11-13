@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const webpack = require('webpack');
+const Dotenv = require("dotenv-webpack");
 
 
 const isProduction = process.env.NODE_ENV === "production";
@@ -20,6 +21,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, "build"),
     // publicPath: "/",
+  
   },
   devServer: {
     open: true,
@@ -38,6 +40,8 @@ const config = {
      new webpack.ProvidePlugin({
       process: 'process/browser',
     }),
+    new Dotenv({
+      systemvars: true,}),
   ],
   module: {
     rules: [

@@ -32,8 +32,8 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                         <div className="col-lg-9 col-md-6 col-4 position-static">
                             <div className="header-left d-flex">
                                 <Logo 
-                                    image={`${process.env.PUBLIC_URL}/images/logo/logo.png`}
-                                    image2={`${process.env.PUBLIC_URL}/images/logo/logo-dark.png`}
+                                    image={`home/images/logo/logo.png`}
+                                    image2={`home/images/logo/logo-dark.png`}
                                 />
                                 <nav className="mainmenu-nav d-none d-lg-block">
                                     <Nav />
@@ -42,9 +42,7 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-8">
                             <div className="header-right">
-                                <div className="header-btn">
-                                    <a className={`btn-default ${btnStyle}`} target="_blank" href="https://themeforest.net/checkout/from_item/33571911?license=regular">BUY NOW</a>
-                                </div>
+                     
                                 <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div className="hamberger">
                                         <span className="hamberger-button" onClick={onCanvasHandler}><FiMenu /></span>

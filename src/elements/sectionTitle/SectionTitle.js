@@ -1,30 +1,24 @@
 import React from 'react';
-import ScrollAnimation from "react-animate-on-scroll";
+import {AnimationOnScroll}  from "react-animation-on-scroll";
 
 
 const SectionTitle = ({subtitle, title, description, textAlign, radiusRounded}) => {
     return (
         <div className={`section-title ${textAlign}`}>
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
+             <AnimationOnScroll  
+                    animateIn="animate__bounceIn">
                 <h4 className={`subtitle ${radiusRounded}`}><span className="theme-gradient" dangerouslySetInnerHTML={{__html: subtitle}}></span></h4>
-            </ScrollAnimation>
+            </AnimationOnScroll>
             
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
+            <AnimationOnScroll  
+                    animateIn="animate__bounceIn">
                 <h2 className="title w-600 mb--20" dangerouslySetInnerHTML={{__html: title}}></h2>
-            </ScrollAnimation>
+            </AnimationOnScroll>
 
-            <ScrollAnimation 
-            animateIn="fadeInUp"
-            animateOut="fadeInOut"
-            animateOnce={true}>
+            <AnimationOnScroll  
+                    animateIn="animate__bounceIn">
                 <p className="description b1" dangerouslySetInnerHTML={{__html: description}}></p>
-            </ScrollAnimation>
+            </AnimationOnScroll>
         </div>
     )
 }

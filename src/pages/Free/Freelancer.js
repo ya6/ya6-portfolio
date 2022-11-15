@@ -1,13 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import SEO from "../../common/SEO";
+
 import { FiArrowRight } from "react-icons/fi";
-import HeaderYA from '../../common/header/HeaderYA';
+
 import HeaderTwo from '../../common/header/HeaderTwo';
 import HeaderTopNews from '../../common/header/HeaderTopNews';
-import CopyrightTwo from '../../common/footer/CopyrightTwo';
+
 import AboutSix from '../../elements/about/AboutSix';
-import ScrollTop from "../../common/footer/ScrollTop";
+
 import ServiceFive from "../../elements/service/ServiceFive";
 import SectionTitleTwo from "../../elements/sectionTitle/SectionTitleTwo";
 import PricingOne from "../../elements/pricing/PricingOne";
@@ -16,19 +16,20 @@ import TimelineTwo from "../../elements/timeline/TimelineTwo";
 import TestimonialOne from "../../elements/testimonial/TestimonialOne";
 import ContactForm from "../../elements/contact/ContactForm";
 
+import hero_back from "../../assets/images/herro_back.jpg"
 
 
 
 const Freelancer = () => {
     return (
         <>
-            <SEO title="Freelancer" />
-            <main className="page-wrapper">
+        
            
-                <HeaderYA btnStyle="btn-small" HeaderSTyle="header-transparent" />
+           
+             
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `/images/bg/bg-png-01.png)`}}>
+                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${hero_back})`}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
@@ -147,9 +148,9 @@ const Freelancer = () => {
                         </div>
                     </div>
                 </div>
-                <CopyrightTwo />
-            </main>
-            <ScrollTop />
+                {/* <CopyrightTwo /> */}
+           
+            {/* <ScrollTop /> */}
         </>
     )
 }

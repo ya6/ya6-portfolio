@@ -1,8 +1,8 @@
 import {useState, useRef} from "react";
-import { FiMenu } from "react-icons/fi";
+// import { FiMenu } from "react-icons/fi";
 import Logo from "../../elements/logo/Logo";
-import Nav from './Nav';
-import MobileMenu from './MobileMenu';
+// import Nav from './Nav';
+// import MobileMenu from './MobileMenu';
 import Darkmode from "./Darkmode";
 import useStickyHeader from "./useStickyHeader";
 import logo_w from "../../assets/images/logo/logo_w.png"

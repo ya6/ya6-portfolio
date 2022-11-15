@@ -16,10 +16,10 @@ const AboutSix = () => {
                         </div>
                         <div className="col-lg-8 col-md-6 col-12 mt_sm--30">
                             <div className="inner">
-                                <span className="theme-gradient subtitle">I have completed 50+ project.</span>
+                                <span className="theme-gradient subtitle">I have completed 10+ project.</span>
                                 <h4 className="color-white maintitle">Have More Projects Complete in My Carreer Life.</h4>
                                 <div className="read-more-btn">
-                                    <Link className="btn-default btn-border" to="#">View More Projects</Link>
+                                    <Link className="btn-default btn-border" to="/portfolio">View More Projects</Link>
                                 </div>
                             </div>
                         </div>

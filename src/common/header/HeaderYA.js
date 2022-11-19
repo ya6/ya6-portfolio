@@ -1,7 +1,7 @@
 import {useState, useRef} from "react";
 // import { FiMenu } from "react-icons/fi";
 import Logo from "../../elements/logo/Logo";
-// import Nav from './Nav';
+import NavYA from './NavYA';
 // import MobileMenu from './MobileMenu';
 import Darkmode from "./Darkmode";
 import useStickyHeader from "./useStickyHeader";
@@ -37,7 +37,9 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                                     image={logo_w}
                                     image2={logo_b}
                                 />
-                              
+                               <nav className="mainmenu-nav d-none d-lg-block">
+                                    <NavYA />
+                                </nav>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-8">

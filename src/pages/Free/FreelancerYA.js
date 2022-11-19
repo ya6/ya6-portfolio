@@ -1,17 +1,18 @@
 import React from 'react'
 
 
-import AboutSix from '../../elements/about/AboutSix';
+import AboutSixYA from '../../elements/about/AboutSixYA';
 
-import ServiceFive from "../../elements/service/ServiceFive";
+import ServiceFiveYA from "../../elements/service/ServiceFiveYA";
 import SectionTitleTwo from "../../elements/sectionTitle/SectionTitleTwo";
 import PricingOne from "../../elements/pricing/PricingOne";
 import BrandThree from "../../elements/brand/BrandThree";
-import TimelineTwo from "../../elements/timeline/TimelineTwo";
+import TimelineTwoYA from "../../elements/timeline/TimelineTwoYA";
 import TestimonialOne from "../../elements/testimonial/TestimonialOne";
 import ContactForm from "../../elements/contact/ContactForm";
 
 import hero_back from "../../assets/images/herro_back.jpg"
+import contact_image from "../../assets/images/contact_image.jpg"
 
 
 
@@ -38,14 +39,14 @@ const Freelancer = () => {
                 </div>
                 {/* End Slider area  */}
 
-                <AboutSix />
+                <AboutSixYA />
 
 
                 <div className="rwt-timeline-area rn-section-gapBottom">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <TimelineTwo classVar="dark-line"  />
+                                <TimelineTwoYA classVar="dark-line"  />
                             </div>
                         </div>
                     </div>
@@ -56,12 +57,12 @@ const Freelancer = () => {
                         <div className="row">
                             <div className="col-lg-12 mb--10">
                                 <SectionTitleTwo
-                                    Title= "My Recent Works."
+                                    Title= "My Recent Works"
                                     textAlign= "text-start"
                                 />
                             </div>
                         </div>
-                        <ServiceFive 
+                        <ServiceFiveYA 
                             serviceStyle = "gallery-style"
                             textAlign = "text-start"
                         />
@@ -70,21 +71,6 @@ const Freelancer = () => {
 
 
                 
-
-                <div className="rwt-portfolio-area rn-section-gapBottom">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12 mb--40">
-                                <SectionTitleTwo
-                                    Title= "My Pricing Plan."
-                                    textAlign= "text-start"
-                                />
-                            </div>
-                        </div>
-                        <PricingOne />
-                    </div>
-                </div>
-
 
 
                 {/* Start Brand Area  */}
@@ -100,29 +86,13 @@ const Freelancer = () => {
                 {/* End Brand Area  */}
 
 
-                {/* Start Elements Area  */}
-                <div className="rwt-testimonial-area rn-section-gapBottom">
-                    <div className="container">
-                        <div className="row mb--20">
-                            <div className="col-lg-12">
-                                <SectionTitleTwo
-                                    Title= "My Clients Review."
-                                    textAlign= "text-start"
-                                />
-                            </div>
-                        </div>
-                        <TestimonialOne column="col-lg-4 col-md-6 col-12" teamStyle="card-style-default testimonial-style-one style-two border-gradient" />
-                    </div>
-                </div>
-                {/* End Elements Area  */}
-
 
                 <div className="contact-area rn-section-gapBottom">
                     <div className="container">
                         <div className="row mb--20">
                             <div className="col-lg-12">
                                 <SectionTitleTwo
-                                    Title= "Contact With Me."
+                                    Title= "Contact With Me"
                                     textAlign= "text-start"
                                 />
                             </div>
@@ -133,15 +103,13 @@ const Freelancer = () => {
                             </div>
                             <div className="col-lg-6 order-1 oder-lg-2">
                                 <div className="thumbnail">
-                                    <img className="radius w-100" src="./images/about/contact-image.jpg" alt="Corporate" />
+                                    <img className="radius w-100" src={contact_image} alt="Corporate" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <CopyrightTwo /> */}
-           
-            {/* <ScrollTop /> */}
+             
         </>
     )
 }

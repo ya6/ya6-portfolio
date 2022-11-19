@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ProgressbarOne from "../progressbar/ProgressbarOne";
+import ProgressbarOneYA from "../progressbar/ProgressbarOneYA";
 import SectionTitleTwo from "../sectionTitle/SectionTitleTwo";
+import projects_promo from "../../assets/images/projects_promo.jpg"
 
 const AboutSix = () => {
     return (
@@ -11,7 +12,7 @@ const AboutSix = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-4 col-md-6 col-12">
                             <div className="thumbnail text-start text-lg-center">
-                                <img src="./images/about/about-logo.png" alt="About images" />
+                                <img src={projects_promo} alt="projects" />
                             </div>
                         </div>
                         <div className="col-lg-8 col-md-6 col-12 mt_sm--30">
@@ -33,7 +34,7 @@ const AboutSix = () => {
                                 Title= "My Working Experience"
                                 textAlign= "text-start mb--40"
                             />
-                            <ProgressbarOne />
+                            <ProgressbarOneYA />
                         </div>
                     </div>
                 </div>

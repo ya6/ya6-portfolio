@@ -1,32 +1,50 @@
 import React from 'react';
+import html from '../../assets/images/logo/html.png'
+import css from '../../assets/images/logo/css.png'
+import js from '../../assets/images/logo/js.png'
+import ts from '../../assets/images/logo/ts.png'
+import node from '../../assets/images/logo/node.png'
+import react from '../../assets/images/logo/react.png'
+import react_router from '../../assets/images/logo/react_router.png'
+import webpack from '../../assets/images/logo/webpack.png'
+import bootstrap from '../../assets/images/logo/bootstrap.png'
+import tailwind from '../../assets/images/logo/tailwind.png'
+import mui from '../../assets/images/logo/mui.png'
 
 const BrandList = [
     {
-        image: './images/brand/brand-01.png'
+        image: html
     },
     {
-        image: './images/brand/brand-02.png'
+        image: css
     },
     {
-        image: './images/brand/brand-03.png'
+        image: js
     },
     {
-        image: './images/brand/brand-04.png'
+        image: ts
     },
     {
-        image: './images/brand/brand-05.png'
+        image: node
     },
     {
-        image: './images/brand/brand-06.png'
+        image: react
     },
     {
-        image: './images/brand/brand-07.png'
+        image: react_router
     },
     {
-        image: './images/brand/brand-08.png'
+        image: webpack
     },
     {
-        image: './images/brand/brand-01.png'
+        image: bootstrap
+    },
+  
+    {
+        image: tailwind
+    },
+    {
+        image: mui
     },
   
 ]
@@ -36,7 +54,7 @@ const BrandThree = ({brandStyle}) => {
         <ul className={`brand-list ${brandStyle}`}>
             {BrandList.map((data, index) => (
                 <li key={index}>
-                    <a href="#"><img src={`${data.image}`} alt="Brand Image" /></a>
+                    <a href="#"><img src={`${data.image}`} alt="Brand Image" width={100} /></a>
                 </li>
             ))}
         </ul>

@@ -1,12 +1,11 @@
 import {useState, useRef} from "react";
-// import { FiMenu } from "react-icons/fi";
+import { FiMenu } from "react-icons/fi";
 import Logo from "../../elements/logo/Logo";
 import NavYA from './NavYA';
-import MobileMenu from './MobileMenu';
+import Nav from './Nav';
+import MobileMenuYA from './MobileMenuYA';
 import Darkmode from "./Darkmode";
 import useStickyHeader from "./useStickyHeader";
-import logo_w from "../../assets/images/logo/logo_w.png"
-import logo_b from "../../assets/images/logo/logo_b.png"
 
 const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
     const [ofcanvasShow, setOffcanvasShow] = useState(false);
@@ -19,7 +18,7 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
     let [check, setCheck] = useState(true);
     const sticky = useStickyHeader( 50 );
     const headerClasses = `header-default ${(sticky && check) ? 'sticky' : ''}`
-  
+    const { clientHeight } = ref;
     
     const checkChange = (value) => {
       setCheck(value);
@@ -34,10 +33,10 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                         <div className="col-lg-9 col-md-6 col-4 position-static">
                             <div className="header-left d-flex">
                                 <Logo 
-                                    image={logo_w}
-                                    image2={logo_b}
+                                    image={`/assets/images/logo/logo_w.png`}
+                                    image2={`assets/images/logo/logo_b.png`}
                                 />
-                               <nav className="mainmenu-nav d-none d-lg-block">
+                                <nav className="mainmenu-nav d-none d-lg-block">
                                     <NavYA />
                                 </nav>
                             </div>
@@ -45,13 +44,18 @@ const HeaderTwo = ({btnStyle, HeaderSTyle}) => {
                         <div className="col-lg-3 col-md-6 col-8">
                             <div className="header-right">
                      
+                                <div className="mobile-menu-bar ml--5 d-block d-lg-none">
+                                    <div className="hamberger">
+                                        <span className="hamberger-button" onClick={onCanvasHandler}><FiMenu /></span>
+                                    </div>
+                                </div>
                                 <Darkmode />
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <MobileMenu show={ofcanvasShow} onClose={onCanvasHandler}  />
+            <MobileMenuYA show={ofcanvasShow} onClose={onCanvasHandler}  />
         </>
     )
 }

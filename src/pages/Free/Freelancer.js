@@ -18,7 +18,6 @@ import hero_back from "../../assets/images/herro_back.jpg"
 const Freelancer = () => {
     return (
         <>
-
                 {/* Start Slider area  */}
                 <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${hero_back})`}}>
                     <div className="container">

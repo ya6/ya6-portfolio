@@ -1,6 +1,7 @@
 import SEO from "../../common/SEO";
 import ScrollTop from "../../common/footer/ScrollTop";
-import HeaderYA from "../../common/header/HeaderYA";
+// import HeaderYA from "../../common/header/HeaderYA";
+import HeaderTwoYA from "../../common/header/HeaderTwoYA";
 import CopyrightTwo from "../../common/footer/CopyrightTwo";
 
 import { Outlet } from "react-router-dom";
@@ -10,7 +11,7 @@ const Layout = () => {
     <>
       <SEO title="Freelancer" />
       <main className="page-wrapper">
-        <HeaderYA btnStyle="btn-small" HeaderSTyle="header-transparent" />
+        <HeaderTwoYA btnStyle="btn-small" HeaderSTyle="header-transparent" />
         <Outlet />
         <CopyrightTwo />
       </main>

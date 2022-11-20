@@ -15,7 +15,7 @@
             "buttontext": "View Projects",
             "link": "https://image.stock-up.by"
         },
-        "largeImage": "/assets/images/portfolio/1/portfolio_1.jpg",
+        "largeImage": "/assets/images/portfolio/1/p1_big.jpg",
         "subContent": {
             "title": "Digital Marketing.",
             "subtext": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities."
@@ -29,9 +29,9 @@
             "subtext": "We provide problem solutions services to startups and small businesses. We help our clients succeed by creating brand identities."
         },
         "gallery": {
-            "imageOne": "images/portfolio/portfolio-01.jpg",
-            "imageTwo": "images/portfolio/portfolio-02.jpg",
-            "imageThree": "images/portfolio/portfolio-03.jpg"
+            "imageOne": "/assets/images/portfolio/1/p1_img_1.jpg",
+            "imageTwo": "/assets/images/portfolio/1/p1_img_2.jpg",
+            "imageThree": "/assets/images/portfolio/1/p1_img_3.jpg"
         }
     },
 

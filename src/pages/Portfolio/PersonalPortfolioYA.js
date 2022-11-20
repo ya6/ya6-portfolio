@@ -6,14 +6,14 @@ import FooterTwo from "../../common/footer/FooterTwo";
 // import Copyright from '../common/footer/Copyright';
 import AboutFive from "../../elements/about/AboutFive";
 import SectionTitle from "../../elements/sectionTitle/SectionTitle";
-import PortfolioOne from "../../elements/portfolio/PortfolioOne";
+import PortfolioOneYA from "../../elements/portfolio/PortfolioOneYA";
 import TestimonialOne from "../../elements/testimonial/TestimonialOne";
 import Separator from "../../elements/separator/Separator";
 import ProgressbarTwo from "../../elements/progressbar/ProgressbarTwo";
 import BrandFour from "../../elements/brand/BrandFour";
 import BlogList from "../../components/blog/itemProp/BlogList";
 import BlogClassicData from "../../data/blog/BlogList.json";
-var BlogListData = BlogClassicData.slice(0, 3);
+// var BlogListData = BlogClassicData.slice(0, 3);
 
 const PersonalPortfolio = () => {
   return (
@@ -34,7 +34,7 @@ const PersonalPortfolio = () => {
               />
             </div>
           </div>
-          <PortfolioOne Column="col-lg-4 col-md-6 col-12 mt--30 portfolio" />
+          <PortfolioOneYA Column="col-lg-4 col-md-6 col-12 mt--30 portfolio" />
         </div>
       </div>
       {/* End Portfolio Area  */}

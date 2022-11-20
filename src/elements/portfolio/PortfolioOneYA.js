@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PortfolioData from "../../data/portfolio/PortfolioData.json";
-import PortfolioItem from "./PortfolioItem";
+import PortfolioItemYA from "./PortfolioItemYA";
 import { FaSpinner } from "react-icons/fa";
 
 const filters = [
@@ -98,7 +98,7 @@ const PortfolioOne = ({ Column }) => {
             <div className="row row--15">
                 {visibleItems.map((item) => (
                     <div key={item.id} className={Column}>
-                        <PortfolioItem portfolio={item} />
+                        <PortfolioItemYA portfolio={item} />
                     </div>
                 ))}
             </div>

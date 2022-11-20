@@ -20,7 +20,7 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
-    // publicPath: "/",
+    //  publicPath: "/",
   
   },
   devServer: {
@@ -28,6 +28,7 @@ const config = {
     host: "localhost",
     hot: true,
     historyApiFallback: true,
+    static: './build',
   },
   plugins: [
     new HtmlWebpackPlugin({

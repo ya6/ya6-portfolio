@@ -97,7 +97,7 @@ const Freelancer = () => {
                                 />
                             </div>
                         </div>
-                        <div className="row row--30 mt--40">
+                        <div id="contact" className="row row--30 mt--40">
                             <div className="col-lg-6 order-2 oder-lg-1 mt_md--30 mt_sm--30">
                                 <ContactForm formStyle="contact-form-1" />
                             </div>

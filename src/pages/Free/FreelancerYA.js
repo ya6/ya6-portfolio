@@ -21,7 +21,8 @@ const Freelancer = () => {
         <>
 
                 {/* Start Slider area  */}
-                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${hero_back})`}}>
+                <div className="slider-area slider-style-2 variation-3 height-850 bg_image bg_image_fixed theme-shape" style={{backgroundImage: `url(${hero_back})`,
+                 backgroundPosition: "right"}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6">

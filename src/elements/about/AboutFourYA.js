@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoTwo from '../video/VideoTwo';
+import VideoTwo from '../video/VideoTwoYA';
 import { FiCheck } from "react-icons/fi";
 
 

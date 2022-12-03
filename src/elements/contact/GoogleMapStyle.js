@@ -14,7 +14,7 @@ class GoogleMapStyle extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div className="google-map-style-1">
+      <div className="google-map-style-1" style={{ height: '50vh', width: '50%' }}>
         <GoogleMapReact
           // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
           defaultCenter={this.props.center}

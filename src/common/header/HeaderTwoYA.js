@@ -2,7 +2,7 @@ import {useState, useRef} from "react";
 import { FiMenu } from "react-icons/fi";
 import Logo from "../../elements/logo/Logo";
 import NavYA from './NavYA';
-import Nav from './Nav';
+
 import MobileMenuYA from './MobileMenuYA';
 import Darkmode from "./Darkmode";
 import useStickyHeader from "./useStickyHeader";

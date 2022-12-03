@@ -58,7 +58,7 @@ const Freelancer = () => {
                         <div className="row">
                             <div className="col-lg-12 mb--10">
                                 <SectionTitleTwo
-                                    Title= "My Recent Works"
+                                    Title= "Short"
                                     textAlign= "text-start"
                                 />
                             </div>

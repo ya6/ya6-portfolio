@@ -7,19 +7,19 @@ import galery_image_03 from "../../assets/images/galery-image-03.png"
 
 const ServiceList = [
     {
-        image: galery_image_01,
-        title: 'Awarded Design',
-        description: 'There are many variations variats.'
+        image: galery_image_03,
+        title: 'UI',
+        description: 'Interface design'
     },
     {
         image: galery_image_02,
-        title: 'Design & Creative',
-        description: 'Passages there are many variatin.'
+        title: 'Depelopment',
+        description: 'Code development'
     },
     {
-        image: galery_image_03,
-        title: 'App Development',
-        description: 'Variations There are many of pass.'
+        image: galery_image_01,
+        title: 'Deploy',
+        description: 'Deploying and running the application'
     }
 ]
 const ServiceFive = ({textAlign, serviceStyle}) => {
